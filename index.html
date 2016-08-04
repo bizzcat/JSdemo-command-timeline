@@ -19,13 +19,14 @@
 
 
         <div class="app-intro">
-          <a href="https://bizzcat.github.io">Back to main page</a>
-          <a href="https://github.com/bizzcat/JSdemo-command-timeline/zipball/master">Download ZIP</a>
-          <a class="buttons" href="https://github.com/bizzcat/JSdemo-command-timeline/tarball/master">Download TAR</a>
-          <a href="https://github.com/bizzcat/JSdemo-command-timeline">View On GitHub</a>
+          <p><a href="https://bizzcat.github.io">Back to main page</a></p>
+          <p><a href="https://github.com/bizzcat/JSdemo-command-timeline/zipball/master">Download ZIP</a></p>
+          <p><a class="buttons" href="https://github.com/bizzcat/JSdemo-command-timeline/tarball/master">Download TAR</a></p>
+          <p><a href="https://github.com/bizzcat/JSdemo-command-timeline">View On GitHub</a></p>
+
           <p>
 
-          </p>
+          </p> <!-- app intro goes here -->
         </div>
 
         <div id="session-1">
@@ -33,7 +34,7 @@
 
         <div>
           <h3>JavaScript</h3>
-          <xmp><code readonly>
+          <xmp>
 
 'use strict';
 
@@ -73,7 +74,6 @@ var commands = [
     "sentTo": [1, 2, 3, 4, 5, 6, 7, 8],
   },
 ]
-
 
 var students = [
   {"name": "Billy", "id": 1},
@@ -152,8 +152,6 @@ function getStudentList(students, commandStudentIDs) {
   }
   return studentList
 }
-
-
 
 function getStudentNamesString(studentList) {
   var namesBelowSix = [];
@@ -244,14 +242,12 @@ function layoutCommands(session, commands, students, teachers) {
   appendSessionStart(session);
 }
 
-
 $(document).ready(function(){
     layoutCommands(session, commands, students, teachers);
     $('[data-toggle="tooltip"]').tooltip();
 });
 
-
-          </code></xmp>
+          </xmp>
         </div>
 
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
